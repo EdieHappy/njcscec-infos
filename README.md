@@ -1,4 +1,4 @@
-# njcscec-wap
+# njcscec-infos
 
 ## Project setup
 ```

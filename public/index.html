@@ -3,14 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <title>中建安装集团南京分公司</title>
+     <!-- <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js"></script>
+  <script> var vConsole = new VConsole();</script> -->
+    <script>
+      (function () {
+        // Set fontSize for rem
+        function rem() {
+          var html = document.documentElement
+          var width = Math.min(html.getBoundingClientRect().width, 500)
+          var fontSize = width * 100 / 750 + 'px'
+          html.style.fontSize = fontSize
+        }
+        rem()
+        window.onresize = function () {
+          rem()
+        }
+      })()
+    </script>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

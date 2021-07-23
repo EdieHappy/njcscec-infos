@@ -1,24 +1,38 @@
 {
-  "name": "njcscec-wap",
+  "name": "njcscec-infos",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy:test": "scp dist/*.html root@106.14.40.49:/opt/njcscecInfos/ && scp -r dist/static/* root@106.14.40.49:/opt/njcscecInfos/static/"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "whatwg-fetch": "^3.0.0",
+    "lodash": "^4.17.11",
+    "js-cookie": "^2.1.3",
+    "vuex": "^3.0.1",
+    "vant": "^2.5.5",
+    "qs": "^6.6.0",
+    "query-string": "4.3.4",
+    "date-fns": "^1.29.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
+    "vue-template-compiler": "^2.6.10",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.11.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
   },
   "eslintConfig": {
     "root": true,
